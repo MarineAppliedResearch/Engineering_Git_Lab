@@ -20,7 +20,7 @@ Before creating and switching branches, ensure that the repository is correctly 
 2. **Ensure your repository is up to date:**
 
    ```sh
-   git pull origin main
+   git pull origin master
    ```
 
 3. **Check your current branch:**
@@ -29,7 +29,7 @@ Before creating and switching branches, ensure that the repository is correctly 
    git branch
    ```
 
-   You should see `main` as the current branch.
+   You should see `master` as the current branch.
 
 ---
 
@@ -90,16 +90,16 @@ After making changes, each participant should commit and push their updates:
 
 1. **Isaac merges first (no conflict expected):**
    ```sh
-   git checkout main
-   git pull origin main
+   git checkout master
+   git pull origin master
    git merge feature-update-sensors
-   git push origin main
+   git push origin master
    ```
 
 2. **Neal merges next (conflict expected with Isaac's change):**
    ```sh
-   git checkout main
-   git pull origin main
+   git checkout master
+   git pull origin master
    git merge feature-update-processing
    ```
    - If a merge conflict occurs, Git will indicate a conflict in `project_spec.txt`.
@@ -108,15 +108,15 @@ After making changes, each participant should commit and push their updates:
      ```sh
      git add project_spec.txt
      git commit -m "Resolved conflict by merging sensor and processing updates"
-     git push origin main
+     git push origin master
      ```
 
 3. **Kyle merges last (no conflict expected):**
    ```sh
-   git checkout main
-   git pull origin main
+   git checkout master
+   git pull origin master
    git merge feature-update-dashboard
-   git push origin main
+   git push origin master
    ```
 
 ---
@@ -126,8 +126,8 @@ After making changes, each participant should commit and push their updates:
 After all changes have been merged, everyone should update their local copy:
 
 ```sh
-   git checkout main
-   git pull origin main
+   git checkout master
+   git pull origin master
 ```
 
 The final version should include all modifications from Isaac, Neal, and Kyle.
