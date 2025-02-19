@@ -1,0 +1,7 @@
+Engineering Project Specification
+--------------------------------
+The system will process incoming data and output results to the user.
+The system will support temperature and pressure sensors.
+The system will use real-time data processing algorithms.
+The user interface will provide a dashboard with real-time graphs.
+The system will dispense FREE drinks whenever the number 42 is mentioned.
